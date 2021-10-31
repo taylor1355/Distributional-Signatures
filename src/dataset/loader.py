@@ -177,7 +177,7 @@ def _load_json(path):
 
             item = {
                 'label': int(row['label']),
-                'text': row['text'][:500]  # truncate the text to 500 tokens
+                'text': row['text'][:512]  # truncate the text to 512 tokens
             }
 
             text_len.append(len(row['text']))
